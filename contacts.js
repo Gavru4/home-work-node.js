@@ -20,6 +20,7 @@ function getContactById(contactId) {
     const userContactById = JSON.parse(data).filter(
       (el) => el.id === String(contactId)
     );
+    console.log(userContactById);
     return userContactById;
   });
 }
